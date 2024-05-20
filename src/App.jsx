@@ -4,7 +4,7 @@ import { ContactShadows, Environment, Lightformer, OrbitControls, Loader } from 
 
 import { CustomizationProvider } from "./context/Customization"
 import Configurator from "./components/Configurator";
-import { Corvette } from "./vehicles/Corvette";
+import { Corvette } from "./vehicles/NewCorvette";
 
 export default function App() {
 
@@ -16,7 +16,7 @@ export default function App() {
       <Canvas shadows camera={{ position: [0, 0, 20], fov:40 }}>
         <color attach="background" args={['grey']} />
         <Suspense fallback={null}>
-        <Corvette scale={1.3} position={[0, -1.1, 0]} />
+        <Corvette scale={0.9} position={[0, -1.1, 0]} />
         </Suspense>
         <hemisphereLight intensity={0.5} />
         <ContactShadows resolution={1024} frames={1} position={[0, -1.16, 0]} scale={15} blur={0.5} opacity={0.5} far={20} />
