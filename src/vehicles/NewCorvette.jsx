@@ -142,4 +142,4 @@ console.log()
   )
 }
 
-useGLTF.preload('/models/NewCorvette.glb')
+useGLTF.preload('/NewCorvette.glb')
