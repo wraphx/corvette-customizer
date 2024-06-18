@@ -45,7 +45,7 @@ const Option = ({ data, ...props }) => (
         {data.label}
     </components.Option>
 );
-
+ 
 const Configurator = () => {
     const { overlay, setOverlay } = useCustomization();
     const [selectedOption, setSelectedOption] = useState(null);
